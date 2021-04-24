@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        meta(charset = 'utf-8')
+        meta(name='viewport',content="initial-scale=1.0,width=device-width")
+    title Home page
+    body
+        div.container
+            header
+                nav
+            h1 Webpack is bundler
+            ul.list#listItems
+                li.list__item
+                    a(href='#' target='_blank') Значение 1
+                li.list__item Значение 2
+                li.list__item Значение 3
+                li.list__item Значение 4
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nesciunt!
+            p
+                |Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptas.
+                |Lorem ipsum dolor sit amet.
+            p.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Optio</strong> reprehenderit voluptas sint aspernatur vero quo deserunt similique aliquam voluptatum. Enim minima corrupti vero totam repellendus sapiente vitae ea obcaecati blanditiis molestiae, explicabo natus corporis qui quis nihil, exercitationem nesciunt illum non dolorem dolore nam voluptas aut? Veritatis inventore, fugit aut laboriosam molestiae, itaque eius laborum voluptate animi blanditiis sunt reprehenderit et officia qui deleniti culpa ex enim cum, voluptatum accusantium molestias possimus esse adipisci placeat? Officia dignissimos vero perferendis similique rerum debitis! Quaerat cum ad, quia optio velit non vitae temporibus illo quas iure labore neque dicta ullam, aliquid maxime.
+            //Comment in HTML code
+            //- comment in pug file
+            //-nav.menu
+                ul.menu__list
+                    each name in ['Главная', 'О компании', 'Услуги', 'Каталог', 'Контакты']
+                        li
+                            a(href="#")=name
+            include ./footer.pug
+        
